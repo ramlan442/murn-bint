@@ -33,7 +33,7 @@ const Murn = () => {
                         key={`nft_${i}`} 
                         src={v} width={200} 
                         onClick={() => handleSelectedImage(i)} 
-                        className={nfts[i] ? "border-2 rounded border-black border-solid p-[3px]" : ""} 
+                        className={`${nfts[i] ? "border-2 rounded border-[#ED5E93] border-solid p-[3px]" : ""} cursor-pointer`} 
                         height={200} 
                         alt="albert"
                     />
