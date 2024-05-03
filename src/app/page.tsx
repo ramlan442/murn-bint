@@ -4,6 +4,7 @@ import { useAccount } from "wagmi";
 import Card from "../components/card";
 import Bint from "../components/bint";
 import Murn from "../components/murn";
+import Balance from "../components/balance";
 
 export default function Home() {
   const account = useAccount();
@@ -18,6 +19,7 @@ export default function Home() {
             <Bint/>
             <hr/>
             <Murn/>
+            <Balance/>
           </>
         )}
       </Card>
