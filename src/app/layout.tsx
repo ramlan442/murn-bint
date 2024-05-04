@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import 'react-toastify/dist/ReactToastify.css';
 import { WagmiProvider } from "./providers";
 import { cookieToInitialState } from "wagmi";
 import { config } from '../config/wagmi'
 import { headers } from "next/headers";
+import { ToastContainer } from "react-toastify";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -26,6 +28,7 @@ export default function RootLayout({
         <WagmiProvider initialState={initialState}>
           {children}
         </WagmiProvider>
+        <ToastContainer />
       </body>
     </html>
   );
